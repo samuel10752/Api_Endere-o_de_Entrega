@@ -1,0 +1,624 @@
+.modal {
+    display: none;
+    position: fixed;
+    z-index: 9999;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: rgba(0, 0, 0, 0.4);
+}
+
+.modal-content {
+    border-radius: 3%;
+    background-color: #fefefe;
+    margin: 4% auto;
+    padding: 10px;
+    border: 1px solid #888;
+    width: 53%;
+    max-width: 1050px;
+    height: 85%;
+}
+
+.close {
+    color: #888;
+    float: right;
+    font-size: 68px;
+    width: 50px;
+    height: 50px;
+    font-weight: bold;
+    margin-right: -2%;
+    margin-top: -2%;
+    cursor: pointer;
+}
+
+.close:hover,
+.close:focus {
+    color: #000;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+.comet-modal-title {
+    text-align: center;
+    font-size: 24px;
+    font-weight: bold;
+    margin-bottom: 20px;
+}
+
+.section-title {
+    font-size: 18px;
+    font-weight: bold;
+    margin-bottom: 10px;
+    margin-left: 3%;
+    font-weight: 700;
+}
+
+.next-row {
+    margin: 0 -8px;
+}
+
+.next-col {
+    padding: 0 8px;
+}
+
+.next-form-item {
+    margin-bottom: 20px;
+}
+
+.next-input {
+    width: 450px;
+    height: 52px;
+    padding: 8px;
+    margin-left: 3%;
+    border: 1px solid #ccc;
+    border-radius: 7px;
+    box-sizing: border-box;
+}
+
+.next-input-dd {
+    width: 75px;
+    height: 52px;
+    padding: 8px;
+    margin-left: 2%;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+}
+
+.next-input-estado {
+    width: 220px;
+    height: 52px;
+    padding: 8px;
+    margin-left: 3%;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+    margin-top: 5px;
+}
+
+.next-input-cidade {
+    width: 225px;
+    height: 52px;
+    padding: 8px;
+    margin-left: 0%;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+    margin-top: 5px;
+}
+
+.next-input-cep {
+    width: 165px;
+    height: 52px;
+    padding: 8px;
+    margin-left: 2%;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+    margin-top: 5px;
+}
+
+.next-input-prazo {
+    width: 165px;
+    height: 52px;
+    padding: 8px;
+    margin-top: 10px;
+    margin-left: 0%;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+    margin-top: 5px;
+}
+
+.next-input-frete {
+    width: 137px;
+    height: 52px;
+    padding: 8px;
+    margin-top: 10px;
+    margin-left: 0%;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+    margin-top: 5px;
+}
+
+.next-input-telefone {
+    width: 400px;
+    height: 52px;
+    padding: 8px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+    margin-top: 5px;
+}
+
+.next-input-bairro {
+    width: 477px;
+    height: 52px;
+    padding: 8px;
+    margin-top: 10px;
+    margin-left: 2%;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+    margin-top: 5px;
+}
+
+.next-input-endereco {
+    width: 450px;
+    height: 52px;
+    padding: 8px;
+    margin-left: 3%;
+    margin-top: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+    margin-top: 5px;
+}
+
+.next-input-apto {
+    width: 450px;
+    height: 52px;
+    padding: 8px;
+    margin-left: 3%;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+    margin-top: 5px;
+}
+
+.next-input-numero {
+    width: 477px;
+    height: 52px;
+    padding: 8px;
+    margin-top: 10px;
+    margin-left: 2%;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+    margin-top: 5px;
+}
+
+.alertas_1 {
+    max-width: 900px;
+    display: flex;
+}
+
+#warningMessage_nome {
+    margin-left: 5%;
+    margin-top: 10px;
+}
+
+#warningMessage_dd {
+    margin-left: 40%;
+    margin-top: 10px;
+}
+
+#warningMessage_telefone {
+    margin-top: 10px;
+}
+
+.alertas_2 {
+    max-width: 900px;
+    display: flex;
+}
+
+#endereco-error {
+    margin-left: 4%;
+    margin-top: 10px;
+}
+
+#bairro-error {
+    margin-left: 34%;
+    margin-top: 10px;
+}
+
+.alertas_3 {
+    max-width: 900px;
+    display: flex;
+}
+
+#apto-error {
+    margin-left: 4%;
+    margin-top: 10px;
+}
+
+#numero-error {
+    margin-left: 34%;
+    margin-top: 10px;
+}
+
+.input-checkbox {
+    position: absolute;
+    display: auto;
+    margin-left: 18%;
+    margin-top: 10px;
+    color: #007bff;
+}
+
+.checkbox-custom {
+    display: none;
+}
+
+.checkbox-custom + label {
+    position: relative;
+    padding-left: 15px;
+    cursor: pointer;
+}
+
+.checkbox-custom + label:before {
+    content: "";
+    position: absolute;
+    left: 0;
+    top: 4px;
+    width: 10px;
+    height: 10px;
+    border: 2px solid #007bff;
+    box-sizing: border-box;
+}
+
+.checkbox-custom:checked + label:after {
+    content: "";
+    position: absolute;
+    left: 0px;
+    top: 5px;
+    width: 8px;
+    height: 8px;
+    background-color: #007bff;
+}
+
+.input-numero {
+    margin-left: 49.5%;
+    margin-top: -57px;
+}
+
+.input-apt {
+    margin-left: 0%;
+    margin-top: 0px;
+}
+
+.text_nome {
+    margin-left: 4%;
+}
+
+.text_cep {
+    margin-left: 41%;
+}
+
+.text_linha_1 {
+    max-width: 900px;
+    display: flex;
+}
+
+.text_frete {
+    margin-left: 15%;
+}
+
+.text_prazo {
+    margin-left: 16%;
+}
+
+.text_linha_2 {
+    max-width: 800px;
+    display: flex;
+}
+
+.text_estado {
+    margin-left: 5%;
+}
+
+.text_cidade {
+    margin-left: 25%;
+}
+
+.text_contato {
+    margin-left: 40%;
+}
+
+.text_linha_3 {
+    max-width: 800px;
+    display: flex;
+    margin-top: 15px;
+}
+
+.text_endereco {
+    margin-left: 5%;
+}
+
+.text_bairro {
+    margin-left: 48%;
+}
+
+.text_linha_4 {
+    max-width: 800px;
+    display: flex;
+    margin-top: 20px;
+}
+
+.text_apto {
+    margin-left: 5%;
+}
+
+.text_numero {
+    margin-left: 39%;
+}
+
+.text_linha_5 {
+    max-width: 800px;
+    display: flex;
+    margin-top: 10px;
+}
+
+.text_info {
+    margin-left: 4%;
+}
+
+.next-input-info {
+    width: 953px;
+    height: 52px;
+    padding: 8px;
+    margin-top: 10px;
+    margin-left: 2.8%;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+    margin-top: 5px;
+}
+
+.alertas {
+    max-width: 900px;
+    display: flex;
+}
+
+#estado-error {
+    margin-left: 4%;
+    margin-top: 10px;
+}
+
+#cidade-error {
+    margin-left: 11%;
+    /* isso pode não ser necessário se estiver usando flex */
+    margin-top: 10px;
+}
+
+#cep-error {
+    margin-left: 33%;
+    /* isso pode não ser necessário se estiver usando flex */
+    margin-top: 10px;
+}
+
+.error-input {
+    border: 1px solid red;
+}
+
+.next-form-item-help {
+    font-size: 12px;
+    color: #888;
+    margin-top: 5px;
+}
+
+.next-form-item-help .help-inner__tip-wrap {
+    font-size: 12px;
+    color: red;
+}
+
+.next-checkbox-label {
+    font-size: 14px;
+    color: #888;
+    margin-left: 5px;
+}
+
+.next-input-obs {
+    width: 950px;
+    height: 52px;
+    padding: 8px;
+    margin-top: 10px;
+    margin-left: 3%;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+    margin-top: 5px;
+}
+
+.text_linha_frete {
+    max-width: 900px;
+    margin-top: 10px;
+    display: flex;
+}
+
+.text_obs {
+    margin-left: 50%;
+}
+
+.button-confirm {
+    position: absolute;
+    overflow: hidden;
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    width: 180px;
+    height: 54px;
+    cursor: pointer;
+    font-size: 16px;
+    line-height: 24px;
+    border-radius: 22px;
+    transition: all 0.3s ease;
+    margin-left: 50%;
+    margin-top: -5%;
+}
+
+.button-cancel {
+    position: absolute;
+    overflow: hidden;
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    width: 180px;
+    height: 54px;
+    cursor: pointer;
+    font-size: 16px;
+    line-height: 24px;
+    border-radius: 22px;
+    transition: all 0.3s ease;
+    margin-left: 75%;
+    margin-top: -5%;
+}
+
+.button-confirm span {
+    position: relative;
+    z-index: 1;
+}
+
+.button-confirm:before {
+    content: "";
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 0;
+    height: 100%;
+    background-color: #fff;
+    opacity: 0.2;
+    transform: translate(-50%, -50%);
+    transition: all 0.3s ease;
+}
+
+.button-confirm:hover:before {
+    width: 100%;
+}
+
+.button-confirm:hover {
+    color: #007bff;
+    background-color: #fff;
+}
+
+.button-cancel span {
+    position: relative;
+    z-index: 1;
+}
+
+.button-cancel:before {
+    content: "";
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 0;
+    height: 100%;
+    background-color: #fff;
+    opacity: 0.2;
+    transform: translate(-50%, -50%);
+    transition: all 0.3s ease;
+}
+
+.button-cancel:hover:before {
+    width: 100%;
+}
+
+.button-cancel:hover {
+    color: #007bff;
+    background-color: #fff;
+}
+
+.andes-form-control {
+    margin-top: 10px;
+    margin-left: 10%;
+    display: flex;
+}
+
+.andes-radioGroup {
+    display: flex;
+    margin-top: 0px;
+}
+
+.andes-radio--suffix {
+    display: flex;
+}
+
+.andes-radio {
+    padding: 5px 16px 5px 0;
+}
+
+.andes-radio {
+    -webkit-align-items: center;
+    align-items: center;
+    display: -webkit-flex;
+    display: flex;
+    font-family:
+        Proxima Nova,
+        -apple-system,
+        Roboto,
+        Arial,
+        sans-serif;
+    font-size: 18px;
+    padding: 5px 16px 5px 6px;
+}
+
+.andes-form-control {
+    -webkit-font-smoothing: antialiased;
+    display: block;
+    font-family:
+        Proxima Nova,
+        -apple-system,
+        Helvetica Neue,
+        Helvetica,
+        Roboto,
+        Arial,
+        sans-serif;
+    font-size: 18px;
+    font-weight: 400;
+    padding-top: 1.666667em;
+    position: relative;
+    text-align: left;
+}
+
+.andes-radio--suffix .andes-radio__label {
+    -webkit-order: 3;
+    order: 3;
+}
+
+.andes-radio__label {
+    -webkit-font-smoothing: antialiased;
+    color: rgba(0, 0, 0, 0.9);
+    cursor: pointer;
+    display: inline-block;
+    font-weight: 400;
+    margin-bottom: 0;
+    outline: none;
+    padding-left: 2px;
+    position: relative;
+}
+
+.andes-radio--suffix .icon-radio {
+    -webkit-order: 2;
+    order: 2;
+    padding: 0 5px 0 4px;
+}
+
+.form-section-e-mail {
+    margin-left: 47%;
+}
+
+.form-section_1 {
+    margin-top: 1%;
+}
