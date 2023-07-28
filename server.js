@@ -69,3 +69,57 @@ app.get('/frete/:cep', async (req, res) => {
 app.listen(3000, () => {
   console.log('API iniciada na porta 3000');
 });
+
+
+// Definir um valor fixo para o frete de envio de carta
+// const freteFixo = 9.05; // Exemplo de valor fixo
+
+// app.get('/frete/:cep', async (req, res) => {
+//   try {
+//     const cep = req.params.cep;
+//     const url = 'http://ws.correios.com.br/calculador/CalcPrecoPrazo.asmx?wsdl';
+
+//     const args = {
+//       nCdEmpresa: '', // Seu código de empresa nos Correios, se houver
+//       sDsSenha: '', // Sua senha nos Correios, se houver
+//       nCdServico: '10065', // Código do serviço - 10065 é o código para Carta Comercial à Vista
+//       sCepOrigem: '37524-000', // CEP de origem
+//       sCepDestino: cep, // CEP de destino
+//       nVlPeso: '1', // Peso da encomenda, em quilogramas
+//       nCdFormato: '1', // Formato da encomenda (1 - Formato caixa/pacote, 2 - Formato rolo/prisma, 3 - Envelope)
+//       nVlComprimento: '20', // Comprimento da encomenda, em centímetros
+//       nVlAltura: '5', // Altura da encomenda, em centímetros
+//       nVlLargura: '15', // Largura da encomenda, em centímetros
+//       nVlDiametro: '0' // Diâmetro da encomenda, em centímetros (se aplicável)
+//     };
+
+//     soap.createClientAsync(url).then((client) => {
+//       return client.CalcPrazoAsync(args);
+//     }).then((result) => {
+//       // Alterar aqui para retornar o valor fixo
+//       const fixedResult = { ...result[0].CalcPrazoResult.Servicos.cServico, Valor: freteFixo.toString() };
+//       res.json(fixedResult);
+//     }).catch((err) => {
+//       res.status(500).json({ message: 'Erro ao calcular o frete', error: err });
+//     });
+//   } catch (error) {
+//     res.status(500).json({ message: 'Erro ao calcular o frete', error: error });
+//   }
+// });
+
+// // Ouvir na porta 3000
+// app.listen(3000, () => {
+//   console.log('API iniciada na porta 3000');
+// });
+
+
+// SEDEX à vista: 04014
+// SEDEX 10: 40215
+// SEDEX Hoje: 40290
+// SEDEX a Cobrar: 40126
+// PAC à vista: 04510
+// PAC a Cobrar: 04707
+// Carta Comercial: 10065
+// Carta Não Comercial: 10138
+// Carta Registrada: 10014
+// Aerograma Nacional: 10689
