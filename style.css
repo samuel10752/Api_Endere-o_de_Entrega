@@ -1,3 +1,4 @@
+/* Estilo do modal */
 .modal {
     display: none;
     position: fixed;
@@ -21,6 +22,7 @@
     height: 85%;
 }
 
+/* Estilo que botão de fecha o poup */
 .close {
     color: #888;
     float: right;
@@ -40,6 +42,13 @@
     cursor: pointer;
 }
 
+/* formulario  */
+
+.form-section_1 {
+    margin-top: 1%;
+}
+
+/* Estilo dos textos */
 .comet-modal-title {
     text-align: center;
     font-size: 24px;
@@ -47,14 +56,94 @@
     margin-bottom: 20px;
 }
 
-.section-title {
-    font-size: 18px;
-    font-weight: bold;
-    margin-bottom: 10px;
-    margin-left: 3%;
-    font-weight: 700;
+
+.text_nome {
+    margin-left: 4%;
 }
 
+.text_cep {
+    margin-left: 41%;
+}
+
+.text_linha_1 {
+    max-width: 900px;
+    display: flex;
+}
+
+.text_frete {
+    margin-left: 15%;
+}
+
+.text_prazo {
+    margin-left: 16%;
+}
+
+.text_linha_2 {
+    max-width: 800px;
+    display: flex;
+}
+
+.text_estado {
+    margin-left: 5%;
+}
+
+.text_cidade {
+    margin-left: 25%;
+}
+
+.text_contato {
+    margin-left: 40%;
+}
+
+.text_linha_3 {
+    max-width: 800px;
+    display: flex;
+    margin-top: 15px;
+}
+
+.text_endereco {
+    margin-left: 5%;
+}
+
+.text_bairro {
+    margin-left: 48%;
+}
+
+.text_linha_4 {
+    max-width: 800px;
+    display: flex;
+    margin-top: 20px;
+}
+
+.text_apto {
+    margin-left: 5%;
+}
+
+.text_numero {
+    margin-left: 39%;
+}
+
+.text_linha_5 {
+    max-width: 800px;
+    display: flex;
+    margin-top: 10px;
+}
+
+.text_info {
+    margin-left: 4%;
+}
+
+.text_linha_frete {
+    max-width: 900px;
+    margin-top: 10px;
+    display: flex;
+}
+
+.text_obs {
+    margin-left: 50%;
+}
+
+/* Estilo dos inputs */
 .next-row {
     margin: 0 -8px;
 }
@@ -201,6 +290,91 @@
     margin-top: 5px;
 }
 
+
+.input-numero {
+    margin-left: 49.5%;
+    margin-top: -57px;
+}
+
+.input-apt {
+    margin-left: 0%;
+    margin-top: 0px;
+}
+
+
+.next-input-info {
+    width: 953px;
+    height: 52px;
+    padding: 8px;
+    margin-top: 10px;
+    margin-left: 2.8%;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+    margin-top: 5px;
+}
+
+
+.next-input-obs {
+    width: 950px;
+    height: 52px;
+    padding: 8px;
+    margin-top: 10px;
+    margin-left: 3%;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+    margin-top: 5px;
+}
+
+
+.input-checkbox {
+    position: absolute;
+    display: auto;
+    margin-left: 18%;
+    margin-top: 10px;
+    color: #007bff;
+}
+
+.checkbox-custom {
+    display: none;
+}
+
+.checkbox-custom + label {
+    position: relative;
+    padding-left: 15px;
+    cursor: pointer;
+}
+
+.checkbox-custom + label:before {
+    content: "";
+    position: absolute;
+    left: 0;
+    top: 4px;
+    width: 10px;
+    height: 10px;
+    border: 2px solid #007bff;
+    box-sizing: border-box;
+}
+
+.checkbox-custom:checked + label:after {
+    content: "";
+    position: absolute;
+    left: 0px;
+    top: 5px;
+    width: 8px;
+    height: 8px;
+    background-color: #007bff;
+}
+
+.next-checkbox-label {
+    font-size: 14px;
+    color: #888;
+    margin-left: 5px;
+}
+
+
+/* Mensagens de Alertas */
 .alertas_1 {
     max-width: 900px;
     display: flex;
@@ -250,143 +424,6 @@
     margin-top: 10px;
 }
 
-.input-checkbox {
-    position: absolute;
-    display: auto;
-    margin-left: 18%;
-    margin-top: 10px;
-    color: #007bff;
-}
-
-.checkbox-custom {
-    display: none;
-}
-
-.checkbox-custom + label {
-    position: relative;
-    padding-left: 15px;
-    cursor: pointer;
-}
-
-.checkbox-custom + label:before {
-    content: "";
-    position: absolute;
-    left: 0;
-    top: 4px;
-    width: 10px;
-    height: 10px;
-    border: 2px solid #007bff;
-    box-sizing: border-box;
-}
-
-.checkbox-custom:checked + label:after {
-    content: "";
-    position: absolute;
-    left: 0px;
-    top: 5px;
-    width: 8px;
-    height: 8px;
-    background-color: #007bff;
-}
-
-.input-numero {
-    margin-left: 49.5%;
-    margin-top: -57px;
-}
-
-.input-apt {
-    margin-left: 0%;
-    margin-top: 0px;
-}
-
-.text_nome {
-    margin-left: 4%;
-}
-
-.text_cep {
-    margin-left: 41%;
-}
-
-.text_linha_1 {
-    max-width: 900px;
-    display: flex;
-}
-
-.text_frete {
-    margin-left: 15%;
-}
-
-.text_prazo {
-    margin-left: 16%;
-}
-
-.text_linha_2 {
-    max-width: 800px;
-    display: flex;
-}
-
-.text_estado {
-    margin-left: 5%;
-}
-
-.text_cidade {
-    margin-left: 25%;
-}
-
-.text_contato {
-    margin-left: 40%;
-}
-
-.text_linha_3 {
-    max-width: 800px;
-    display: flex;
-    margin-top: 15px;
-}
-
-.text_endereco {
-    margin-left: 5%;
-}
-
-.text_bairro {
-    margin-left: 48%;
-}
-
-.text_linha_4 {
-    max-width: 800px;
-    display: flex;
-    margin-top: 20px;
-}
-
-.text_apto {
-    margin-left: 5%;
-}
-
-.text_numero {
-    margin-left: 39%;
-}
-
-.text_linha_5 {
-    max-width: 800px;
-    display: flex;
-    margin-top: 10px;
-}
-
-.text_info {
-    margin-left: 4%;
-}
-
-.next-input-info {
-    width: 953px;
-    height: 52px;
-    padding: 8px;
-    margin-top: 10px;
-    margin-left: 2.8%;
-    border: 1px solid #ccc;
-    border-radius: 4px;
-    box-sizing: border-box;
-    margin-top: 5px;
-}
-
 .alertas {
     max-width: 900px;
     display: flex;
@@ -413,45 +450,8 @@
     border: 1px solid red;
 }
 
-.next-form-item-help {
-    font-size: 12px;
-    color: #888;
-    margin-top: 5px;
-}
 
-.next-form-item-help .help-inner__tip-wrap {
-    font-size: 12px;
-    color: red;
-}
-
-.next-checkbox-label {
-    font-size: 14px;
-    color: #888;
-    margin-left: 5px;
-}
-
-.next-input-obs {
-    width: 950px;
-    height: 52px;
-    padding: 8px;
-    margin-top: 10px;
-    margin-left: 3%;
-    border: 1px solid #ccc;
-    border-radius: 4px;
-    box-sizing: border-box;
-    margin-top: 5px;
-}
-
-.text_linha_frete {
-    max-width: 900px;
-    margin-top: 10px;
-    display: flex;
-}
-
-.text_obs {
-    margin-left: 50%;
-}
-
+/* Estilos dos Botões Confirmar e Cancelar */
 .button-confirm {
     position: absolute;
     overflow: hidden;
@@ -540,6 +540,7 @@
     background-color: #fff;
 }
 
+/* Botão de Seleção */
 .andes-form-control {
     margin-top: 10px;
     margin-left: 10%;
@@ -615,10 +616,4 @@
     padding: 0 5px 0 4px;
 }
 
-.form-section-e-mail {
-    margin-left: 47%;
-}
 
-.form-section_1 {
-    margin-top: 1%;
-}

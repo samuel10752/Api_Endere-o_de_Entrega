@@ -12,8 +12,10 @@
 
 <body>
 
+    <!-- Botão para abrir o modal -->
     <button id="enderecoPopup">Abrir Modal</button>
 
+    <!-- Modal de Adicionar o Endereço -->
     <div id="myModal" class="modal">
         <div class="modal-content">
             <span class="close" onclick="fecharPopup()">&times;</span>
@@ -57,21 +59,12 @@
                                         <div class="text_linha_frete">
                                             <div class="text_obs"> Observação </div>
                                         </div>
-
-
+                                        
                                         <input class="next-input-obs" type="text" id="obs" name="obs" disabled readonly>
-
-
-
                                     </div>
-
-
                                 </div>
-
                             </div>
-
                         </div>
-
                     </div>
 
 
@@ -81,8 +74,6 @@
                             <div class="next-row form-row-wrap">
                                 <div class="next-col">
                                     <div class="next-form-item">
-
-
                                         <div class="text_linha_2">
                                             <div class="text_estado"> Estado </div>
                                             <div class="text_cidade"> Cidade </div>
@@ -97,8 +88,6 @@
                                             autocomplete="off" value="" required
                                             oninput="validarCidade(this); validarLetras(this);" disabled>
 
-
-
                                         <input class="next-input-dd" id="dd" height="100%" name="dd" placeholder=""
                                             autocomplete="off" value="" oninput="limitarCaracteres(this, 3)">
 
@@ -112,7 +101,6 @@
                                             <div id="warningMessage_telefone" style="color: red;"></div>
                                         </div>
 
-
                                         <div class="text_linha_3">
                                             <div class="text_endereco"> Rua/Avenida </div>
                                             <div class="text_bairro"> Bairro </div>
@@ -122,20 +110,14 @@
                                             autocomplete="off" value="" required oninput="validarEndereco(this)"
                                             oninput="validarLetras(this)">
 
-
-
-
                                         <input class="next-input-bairro" id="bairro" name="bairro" placeholder=""
                                             autocomplete="off" value="" required oninput="validarBairro(this)"
                                             oninput="validarLetras(this)">
-
-
 
                                         <div class="alertas_2">
                                             <div id="endereco-error" style="color: red; display: none;"></div>
                                             <div id="bairro-error" style="color: red; display: none;"></div>
                                         </div>
-
 
                                         <div class="text_linha_4">
                                             <div class="text_apto"> Complemento (opcional) </div>
@@ -177,18 +159,13 @@
                                             placeholder="Descrição da fachada, pontos de referência, informações de segurança etc."
                                             autocomplete="off" value="">
 
-
-
-
-                                        <div
-                                            class="andes-form-control andes-form-control--error addresses-radio-margin">
+                                        <div class="andes-form-control andes-form-control--error addresses-radio-margin">
                                             <span class="label-radio-delivery">Este é o seu trabalho ou sua casa?</span>
                                             <div required class="andes-radioGroup" role="radiogroup" aria-labelledby="">
-                                                <div
-                                                    class="andes-radio andes-radio--default andes-radio--inline andes-radio--suffix">
+                                                <div class="andes-radio andes-radio--default andes-radio--inline andes-radio--suffix">
                                                     <div class="andes-radio-element"><input type="radio"
                                                             class="andes-radio__input" id="commercial"
-                                                            name="delivery_group" value="commercial">
+                                                            name="delivery_group" value="commercial required">
                                                         <div class="andes-radio__background">
                                                             <div class="andes-radio__outer-circle"></div>
                                                             <div class="andes-radio__inner-circle"></div>
@@ -203,11 +180,10 @@
                                                                 fill="#4A4A4A"></path>
                                                         </svg> </i>
                                                 </div>
-                                                <div required
-                                                    class="andes-radio andes-radio--default andes-radio--inline andes-radio--suffix">
+                                                <div class="andes-radio andes-radio--default andes-radio--inline andes-radio--suffix" required>
                                                     <div class="andes-radio-element"><input type="radio"
                                                             class="andes-radio__input" id="residential"
-                                                            name="delivery_group" value="residential">
+                                                            name="delivery_group" value="residential" required>
                                                         <div class="andes-radio__background">
                                                             <div class="andes-radio__outer-circle"></div>
                                                             <div class="andes-radio__inner-circle"></div>
@@ -232,7 +208,6 @@
                                                 <span>Cancel</span>
                                             </button>
 
-
                                         </div>
                                     </div>
                                 </div>
@@ -245,7 +220,6 @@
     </div>
 
     <script src="javascript.js"></script>
-
 </body>
 
 </html>

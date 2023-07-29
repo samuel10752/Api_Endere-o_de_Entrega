@@ -112,14 +112,3 @@ app.listen(3000, () => {
 //   console.log('API iniciada na porta 3000');
 // });
 
-
-// SEDEX à vista: 04014
-// SEDEX 10: 40215
-// SEDEX Hoje: 40290
-// SEDEX a Cobrar: 40126
-// PAC à vista: 04510
-// PAC a Cobrar: 04707
-// Carta Comercial: 10065
-// Carta Não Comercial: 10138
-// Carta Registrada: 10014
-// Aerograma Nacional: 10689
