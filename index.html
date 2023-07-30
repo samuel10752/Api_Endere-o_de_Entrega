@@ -29,38 +29,31 @@
                                     <div class="next-form-item">
 
                                         <div class="text_linha_1">
-                                            <div class="text_nome"> Nome completo </div>
-                                            <div class="text_cep"> CEP </div>
-                                            <div class="text_prazo"> Prazo </div>
-                                            <div class="text_frete"> Frete </div>
+                                            <div class="text_nome"> Nome do Contato </div>
                                         </div>
 
-                                        <input class="next-input" id="nome" name="nome" placeholder=""
-                                            autocomplete="off" value="" required oninput="validarLetras(this)">
+                                        <div class="input-form-1">
+                                            <input class="next-input" id="nome" name="nome"
+                                                placeholder="Nome do Contato*" autocomplete="off" value="" required
+                                                oninput="validarLetras(this)">
 
-                                        <input class="next-input-cep" id="cep" name="cep" placeholder=""
-                                            autocomplete="off" value="" required
-                                            oninput="validarCEP(this); validarNumeros(this);"
-                                            onchange="formatarCEP(this); buscarFrete(this.value);">
+                                            <input class="next-input-dd" id="dd" height="100%" name="dd"
+                                                placeholder="DD*" autocomplete="off" value=""
+                                                oninput="limitarCaracteres(this, 3)">
 
-                                        <input class="next-input-prazo" type="text" id="prazo" name="prazo" disabled
-                                            readonly>
+                                            <input class="next-input-telefone" id="telefone" name="Telefone"
+                                                placeholder="Numero de Celular*" autocomplete="off" value="" required
+                                                oninput="validarTelefone(this)">
 
-                                        <input class="next-input-frete" type="text" id="frete" name="frete" disabled
-                                            readonly>
 
+                                        </div>
 
                                         <div class="alertas_1">
                                             <div id="warningMessage_nome" style="color: red;"></div>
-                                            <div id="cep-error" style="color: red; display: none;"></div>
-
+                                            <div id="warningMessage_dd" style="color: red;"></div>
+                                            <div id="warningMessage_telefone" style="color: red;"></div>
                                         </div>
 
-                                        <div class="text_linha_frete">
-                                            <div class="text_obs"> Observação </div>
-                                        </div>
-                                        
-                                        <input class="next-input-obs" type="text" id="obs" name="obs" disabled readonly>
                                     </div>
                                 </div>
                             </div>
@@ -75,80 +68,75 @@
                                 <div class="next-col">
                                     <div class="next-form-item">
                                         <div class="text_linha_2">
-                                            <div class="text_estado"> Estado </div>
-                                            <div class="text_cidade"> Cidade </div>
-                                            <div class="text_contato"> Telefone de contato </div>
+                                            <div class="text_endereco   "> Endereço </div>
                                         </div>
 
-                                        <input class="next-input-estado" id="estado" name="estado" placeholder=""
-                                            autocomplete="off" value="" required
-                                            oninput="validarEstado(this); validarLetras(this);" disabled>
-
-                                        <input class="next-input-cidade" id="cidade" name="cidade" placeholder=""
-                                            autocomplete="off" value="" required
-                                            oninput="validarCidade(this); validarLetras(this);" disabled>
-
-                                        <input class="next-input-dd" id="dd" height="100%" name="dd" placeholder=""
-                                            autocomplete="off" value="" oninput="limitarCaracteres(this, 3)">
-
-                                        <input class="next-input-telefone" id="telefone" name="Telefone" placeholder=""
-                                            autocomplete="off" value="" required oninput="validarTelefone(this)">
-
-                                        <div class="alertas">
-                                            <div id="estado-error" style="color: red; display: none;"></div>
-                                            <div id="cidade-error" style="color: red; display: none;"></div>
-                                            <div id="warningMessage_dd" style="color: red;"></div>
-                                            <div id="warningMessage_telefone" style="color: red;"></div>
-                                        </div>
-
-                                        <div class="text_linha_3">
-                                            <div class="text_endereco"> Rua/Avenida </div>
-                                            <div class="text_bairro"> Bairro </div>
-                                        </div>
-
-                                        <input class="next-input-endereco" id="endereco" name="endereco" placeholder=""
-                                            autocomplete="off" value="" required oninput="validarEndereco(this)"
-                                            oninput="validarLetras(this)">
-
-                                        <input class="next-input-bairro" id="bairro" name="bairro" placeholder=""
-                                            autocomplete="off" value="" required oninput="validarBairro(this)"
-                                            oninput="validarLetras(this)">
-
-                                        <div class="alertas_2">
-                                            <div id="endereco-error" style="color: red; display: none;"></div>
-                                            <div id="bairro-error" style="color: red; display: none;"></div>
-                                        </div>
-
-                                        <div class="text_linha_4">
-                                            <div class="text_apto"> Complemento (opcional) </div>
-                                            <div class="text_numero"> Número </div>
-                                        </div>
-
-                                        <div class="input-apt">
-
-                                            <input class="next-input-apto" id="apto" name="apto" placeholder=""
-                                                autocomplete=" off" value="" oninput="validarApto(this)"
-                                                oninput="validarLetras(this)">
-
-                                        </div>
-
-                                        <div style="display: flex; align-items: center;" class="input-numero">
-
-                                            <input class="next-input-numero" id="numero" name="numero" placeholder=""
+                                        <div class="input-form-2">
+                                            <input class="next-input-cep" id="cep" name="cep" placeholder="CEP*"
                                                 autocomplete="off" value="" required
-                                                oninput="validarNumero(this); validarNumeros(this);">
+                                                oninput="validarCEP(this); validarNumeros(this);"
+                                                onchange="formatarCEP(this); buscarFrete(this.value);">
 
-                                            <div class="input-checkbox">
-                                                <input type="checkbox" id="semNumero" class="checkbox-custom"
-                                                    name="semNumero" onclick="verificarSemNumero()">
-                                                <label for="semNumero">Sem número</label>
+                                            <input class="next-input-estado" id="estado" name="estado"
+                                                placeholder="estado*" autocomplete="do-not-autofill" value="" required
+                                                oninput="validarEstado(this); validarLetras(this);" disabled>
+
+                                            <input class="next-input-cidade" id="cidade" name="cidade"
+                                                placeholder="cidade*" autocomplete="do-not-autofill" value="" required
+                                                oninput="validarCidade(this); validarLetras(this);" disabled>
+
+                                            <input class="next-input-prazo" type="text" id="prazo" name="prazo"
+                                                placeholder="Prazo" disabled readonly>
+
+                                            <input class="next-input-frete" type="text" id="frete" name="frete"
+                                                placeholder="Frete" disabled readonly>
+
+                                            <div class="input-numero">
+
+                                                <input class="next-input-numero" id="numero" name="numero"
+                                                    placeholder="Numero*" autocomplete="off" value="" required
+                                                    oninput="validarNumero(this); validarNumeros(this);">
+
+                                                <div class="input-checkbox">
+                                                    <input type="checkbox" id="semNumero" class="checkbox-custom"
+                                                        name="semNumero" onclick="verificarSemNumero()">
+                                                    <label for="semNumero">Sem número</label>
+                                                </div>
                                             </div>
                                         </div>
 
-                                        <div class="alertas_3">
-                                            <div id="apto-error" style="color: red; display: none;"></div>
+
+                                        <div class="alertas_2">
+                                            <div id="cep-error" style="color: red; display: none;"></div>
                                             <div id="numero-error" style="color: red; display: none;"></div>
                                         </div>
+
+                                        <input class="next-input-obs" type="text" id="obs" name="obs"
+                                            placeholder="Observação" disabled readonly>
+
+
+                                        <div class="input-form-3">
+                                            <input class="next-input-endereco" id="endereco" name="endereço"
+                                                placeholder="Endereco*" autocomplete="off" value="" required
+                                                oninput="validarEndereco(this)" oninput="validarLetras(this)">
+
+                                            <input class="next-input-bairro" id="bairro" name="bairro"
+                                                placeholder="Bairro*" autocomplete="off" value="" required
+                                                oninput="validarBairro(this)" oninput="validarLetras(this)">
+
+
+                                            <input class="next-input-apto" id="apto" name="apto"
+                                                placeholder="Apto, conjunto, unidade, etc. (Complemento)" autocomplete=" off" value=""
+                                                oninput="validarApto(this)" oninput="validarLetras(this)">
+
+                                        </div>
+
+                                        <div class="alertas_3">
+                                            <div id="endereco-error" style="color: red; display: none;"></div>
+                                            <div id="bairro-error" style="color: red; display: none;"></div>
+                                            <div id="apto-error" style="color: red; display: none;"></div>
+                                        </div>
+
 
                                         <div class="text_linha_5">
                                             <div class="text_info"> Informações adicionais deste endereço (opcional)
@@ -159,10 +147,15 @@
                                             placeholder="Descrição da fachada, pontos de referência, informações de segurança etc."
                                             autocomplete="off" value="">
 
-                                        <div class="andes-form-control andes-form-control--error addresses-radio-margin">
+
+
+
+                                        <div
+                                            class="andes-form-control andes-form-control--error addresses-radio-margin">
                                             <span class="label-radio-delivery">Este é o seu trabalho ou sua casa?</span>
                                             <div required class="andes-radioGroup" role="radiogroup" aria-labelledby="">
-                                                <div class="andes-radio andes-radio--default andes-radio--inline andes-radio--suffix">
+                                                <div
+                                                    class="andes-radio andes-radio--default andes-radio--inline andes-radio--suffix">
                                                     <div class="andes-radio-element"><input type="radio"
                                                             class="andes-radio__input" id="commercial"
                                                             name="delivery_group" value="commercial required">
@@ -180,7 +173,8 @@
                                                                 fill="#4A4A4A"></path>
                                                         </svg> </i>
                                                 </div>
-                                                <div class="andes-radio andes-radio--default andes-radio--inline andes-radio--suffix" required>
+                                                <div class="andes-radio andes-radio--default andes-radio--inline andes-radio--suffix"
+                                                    required>
                                                     <div class="andes-radio-element"><input type="radio"
                                                             class="andes-radio__input" id="residential"
                                                             name="delivery_group" value="residential" required>
@@ -199,22 +193,24 @@
                                                         </svg> </i>
                                                 </div>
                                             </div>
-                                            <button type="button" onclick="salvarInformacoes()"
-                                                class="comet-btn comet-btn-primary comet-btn-large form-item-button button-confirm">
-                                                <span>Confirm</span>
-                                            </button>
-                                            <button type="button" onclick="fecharPopup()"
-                                                class="comet-btn comet-btn-normal comet-btn-large form-item-button button-cancel">
-                                                <span>Cancel</span>
-                                            </button>
-
                                         </div>
+
                                     </div>
                                 </div>
                             </div>
                         </div>
                     </div>
                 </form>
+                <div class="buttons">
+                    <button type="button" onclick="salvarInformacoes()"
+                        class="comet-btn comet-btn-primary comet-btn-large form-item-button button-confirm">
+                        <span>Confirm</span>
+                    </button>
+                    <button type="button" onclick="fecharPopup()"
+                        class="comet-btn comet-btn-normal comet-btn-large form-item-button button-cancel">
+                        <span>Cancel</span>
+                    </button>
+                </div>
             </div>
         </div>
     </div>

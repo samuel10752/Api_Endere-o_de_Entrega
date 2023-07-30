@@ -1,0 +1,41 @@
+/* Estilos para tablets (screens in an orientation of landscape) */
+
+@media only screen and (min-width: 600px) {
+    .modal-content {
+        width: 70%;
+    }
+    form {
+        width: 40%;
+    }
+}
+
+/* Estilos para desktops pequenos e laptops (screens in an orientation of landscape) */
+@media only screen and (min-width: 768px) {
+    .modal-content {
+        width: 60%;
+    }
+    
+    form {
+        width: 40%;
+    }
+}
+
+/* Estilos para desktops grandes */
+@media only screen and (min-width: 992px) {
+    .modal-content {
+        width: 50%;
+    }
+    form {
+        width: 40%;
+    }
+}
+
+/* Estilos para desktops extra grandes */
+@media only screen and (min-width: 1200px) {
+    .modal-content {
+        width: 850px;
+    }
+    /* textos */
+
+
+} 
