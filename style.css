@@ -17,9 +17,25 @@
     margin: 4% auto;
     padding: 10px;
     border: 1px solid #888;
-    width: 53%;
-    max-width: 1050px;
-    height: 85%;
+    width: 850px;
+    /* Define o tamanho máximo da altura do conteúdo para evitar a exibição da barra de rolagem vertical */
+    height: 70%;
+    /* Adiciona rolagem vertical quando necessário */
+    overflow-y: auto;
+}
+
+/* Personaliza a aparência da barra de rolagem */
+/* Para navegadores baseados no motor WebKit, como Chrome e Safari */
+.modal-content::-webkit-scrollbar {
+    width: 10px; /* Largura da barra de rolagem vertical */
+}
+
+.modal-content::-webkit-scrollbar-thumb {
+    background-color: rgba(0, 0, 0, 0); /* Define uma cor transparente para o polegar da barra de rolagem */
+}
+
+.modal-content::-webkit-scrollbar-track {
+    background-color: rgba(0, 0, 0, 0); /* Define uma cor transparente para a pista da barra de rolagem */
 }
 
 /* Estilo que botão de fecha o poup */
@@ -30,7 +46,7 @@
     width: 50px;
     height: 50px;
     font-weight: bold;
-    margin-right: -2%;
+    margin-right: -1%;
     margin-top: -2%;
     cursor: pointer;
 }
@@ -102,10 +118,9 @@
     margin-left: 4%;
 }
 
-
 /* Estilo dos inputs */
 
-.input-form-1{
+.input-form-1 {
     width: 850px;
     display: flex;
 }
@@ -155,7 +170,7 @@
 
 /* endereço */
 
-.input-form-2{
+.input-form-2 {
     width: 850px;
     display: flex;
 }
@@ -290,7 +305,7 @@
     cursor: not-allowed;
 }
 
-.input-form-3{
+.input-form-3 {
     width: 850px;
     display: flex;
 }
@@ -330,7 +345,6 @@
     margin-top: 5px;
 }
 
-
 .next-input-info {
     width: 817px;
     height: 52px;
@@ -342,11 +356,9 @@
     margin-top: 10px;
 }
 
-
-
 /* Mensagens de Alertas */
 .alertas_1 {
-    width: 1000px;
+    width: 800px;
     display: flex;
 }
 
@@ -365,9 +377,8 @@
     margin-top: 10px;
 }
 
-
 .alertas_2 {
-    width: 900px;
+    width: 800px;
     display: flex;
 }
 
@@ -382,7 +393,7 @@
 }
 
 .alertas_3 {
-    width: 900px;
+    width: 800px;
     display: flex;
     margin-bottom: 16px;
 }
@@ -397,21 +408,14 @@
     margin-top: 10px;
 }
 
-#apto-error {
-    margin-left: 5%;
-    margin-top: 10px;
-}
-
-
 .error-input {
     border: 1px solid red;
 }
 
-
 /* Estilos dos Botões Confirmar e Cancelar */
 
-.buttons{
-    max-width: 1500px;
+.buttons {
+    max-width: 1000px;
     display: flex;
     margin-left: 50%;
     margin-top: -8%;
@@ -579,5 +583,3 @@
     order: 2;
     padding: 0 5px 0 4px;
 }
-
-

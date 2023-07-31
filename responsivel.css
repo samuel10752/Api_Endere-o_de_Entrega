@@ -1,41 +1,276 @@
-/* Estilos para tablets (screens in an orientation of landscape) */
-
-@media only screen and (min-width: 600px) {
-    .modal-content {
-        width: 70%;
-    }
-    form {
-        width: 40%;
-    }
-}
-
 /* Estilos para desktops pequenos e laptops (screens in an orientation of landscape) */
-@media only screen and (min-width: 768px) {
+@media only screen and (min-width: 600px) and (max-width: 767px) {
     .modal-content {
         width: 60%;
     }
-    
+
     form {
         width: 40%;
     }
+    
 }
 
+
 /* Estilos para desktops grandes */
-@media only screen and (min-width: 992px) {
+@media only screen and (min-width: 768px) and (max-width: 921px) {
     .modal-content {
         width: 50%;
     }
     form {
         width: 40%;
     }
+    /* textos */
+
+    .text_nome {
+        margin-left: 3.5%;
+    }
+    
+    .text_endereco {
+        margin-left: 6%;
+    }
+    .text_info {
+        margin-left: 5%;
+    }
+
+    /* inputs */
+
+    .next-input{
+        max-width: 140px;
+        height: 40px;
+    }
+
+    .next-input-dd{
+        width: 55px;
+        height: 40px;
+    }
+
+    .next-input-telefone {
+        width: 330px;
+        height: 40px;
+    }
+
+
+
 }
+
+
+/* Estilos para desktops grandes */
+@media only screen and (min-width: 922px) and (max-width: 1199px) {
+    .modal-content {
+        width: 50%;
+    }
+    form {
+        width: 40%;
+    }
+    /* textos */
+
+    .text_nome {
+        margin-left: 3.5%;
+    }
+    
+    .text_endereco {
+        margin-left: 6%;
+    }
+    .text_info {
+        margin-left: 5%;
+    }
+
+    /* inputs */
+
+    .next-input{
+        width: 270px;
+        height: 30px;
+    }
+
+    .next-input-dd{
+        width: 55px;
+        height: 30px;
+    }
+
+    .next-input-telefone {
+        width: 200px;
+        height: 30px;
+    }
+
+
+
+}
+
 
 /* Estilos para desktops extra grandes */
 @media only screen and (min-width: 1200px) {
     .modal-content {
         width: 850px;
     }
-    /* textos */
+
+    form{
+        width: 40%;
+    }
+
+     /* textos */
+
+     .text_nome {
+        margin-left: 3%;
+    }
+    
+    .text_endereco {
+        margin-left: 5%;
+    }
+    .text_info {
+        margin-left: 4%;
+    }
+
+    /* botão de fecha o poup */
+    .close{
+        width: 50px;
+        height: 50px;
+        margin-right: -1%;
+        font-size: 68px;
+        margin-top: -2%;
+    }
+
+    /* inputs */
+
+    .next-input{
+        width: 390px;
+        height: 52px;
+    }
+
+    .next-input-dd{
+        width: 75px;
+        height: 52px;
+    }
+
+    .next-input-telefone {
+        width: 335px;
+        height: 52px;
+    }
+
+    .next-input-cep{
+        max-width: 140px;
+        height: 52px;
+    }
+
+    .next-input-estado{
+        width: 120px;
+        height: 52px;
+    }
+
+    .next-input-cidade{
+        width: 130px;
+        height: 52px;
+    }
+
+    .next-input-prazo{
+        max-width: 77px;
+        height: 52px;
+    }
+
+    .next-input-frete {
+        max-width: 100px;
+        height: 52px;
+    }
+
+    .next-input-numero{
+        width: 233px;
+        height: 52px;
+    }
+
+    .input-checkbox{
+        margin-left: 50%;
+        margin-top: -35px;
+    }
+
+    .next-checkbox-label{
+        margin-left: 5px;
+    }
+
+    .next-input-obs{
+        width: 817px;
+        height: 52px;
+    }
+
+    .next-input-endereco{
+        width: 140px;
+        height: 52px;
+    }
+
+    .next-input-bairro{
+        width: 251px;
+        height: 52px;
+    }
+
+    .next-input-apto{
+        width: 400px;
+        height: 52px;
+    }
+
+    .next-input-info{
+        width: 817px;
+        height: 52px;
+    }
+
+    /* Alertas */
+
+    #warningMessage_nome {
+        margin-left: 2%;
+        margin-top: 10px;
+    }
+    
+    #warningMessage_dd {
+        margin-left: 20%;
+        margin-top: 10px;
+    }
+    
+    #warningMessage_telefone {
+        margin-left: 5%;
+        margin-top: 10px;
+    }
+
+    #cep-error {
+        margin-left: 3%;
+        margin-top: 10px;
+    }
+    
+    #numero-error {
+        margin-left: 34%;
+        margin-top: 10px;
+    }
+
+    #endereco-error {
+        margin-left: 2%;
+        margin-top: 10px;
+    }
+    
+    #bairro-error {
+        margin-left: 4%;
+        margin-top: 10px;
+    }
 
 
-} 
+    /* Botões Confirmar e Cancelar */
+
+    .buttons{
+        max-width: 1000px;
+        margin-left: 50%;
+        margin-top: -8%;
+    }
+
+    .button-confirm{
+        width: 180px;
+        height: 54px;
+    }
+
+    .button-cancel{
+        width: 180px;
+        height: 54px;
+    }
+
+    /* Botão de Seleção */
+
+    .andes-form-control {
+        margin-top: 10px;
+        margin-left: 10%;
+    }
+
+}

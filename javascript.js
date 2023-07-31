@@ -1,5 +1,5 @@
- // Função para abrir o popup
- function abrirPopup() {
+// Função para abrir o popup
+function abrirPopup() {
     const popup = document.getElementById('enderecoPopup');
     popup.style.display = 'block'; // Exibir o popup
 }
@@ -409,7 +409,7 @@ function salvarInformacoes() {
         bairro === "" ||
         numero === "" ||
         commercial === "" ||
-        residential === "" 
+        residential === ""
     ) {
         alert("Por favor, preencha todos os campos obrigatórios.");
         return; // Impedir o salvamento e fechamento do modal se algum campo estiver vazio
@@ -445,4 +445,5 @@ window.onclick = function (event) {
     if (event.target == modal) {
         fecharPopup();
     }
+
 }
