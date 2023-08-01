@@ -1,276 +1,179 @@
-/* Estilos para desktops pequenos e laptops (screens in an orientation of landscape) */
-@media only screen and (min-width: 600px) and (max-width: 767px) {
+/* CSS para smartphones */
+@media screen and (max-width: 480px) {
     .modal-content {
-        width: 60%;
+        width: 1%; /* faz o modal ocupar a totalidade da largura da tela */
+        padding: 10px;
+    }
+    /* texto */
+    .text_linha_1 {
+        margin-left: 2%;
+        width: 32%;
     }
 
-    form {
+    .text_linha_2 {
+        margin-left: 1%;
         width: 40%;
     }
-    
-}
 
-
-/* Estilos para desktops grandes */
-@media only screen and (min-width: 768px) and (max-width: 921px) {
-    .modal-content {
-        width: 50%;
+    .text_linha_5 {
+        margin-left: 2%;
+        width: 90%;
     }
-    form {
-        width: 40%;
-    }
-    /* textos */
-
-    .text_nome {
-        margin-left: 3.5%;
-    }
-    
-    .text_endereco {
-        margin-left: 6%;
-    }
-    .text_info {
-        margin-left: 5%;
-    }
-
     /* inputs */
-
-    .next-input{
-        max-width: 140px;
-        height: 40px;
-    }
-
-    .next-input-dd{
-        width: 55px;
-        height: 40px;
+    .next-input {
+        width: 94%;
     }
 
     .next-input-telefone {
-        width: 330px;
-        height: 40px;
+        width: 76.8%;
+        margin-left: -1%;
     }
 
-
-
-}
-
-
-/* Estilos para desktops grandes */
-@media only screen and (min-width: 922px) and (max-width: 1199px) {
-    .modal-content {
-        width: 50%;
-    }
-    form {
-        width: 40%;
-    }
-    /* textos */
-
-    .text_nome {
-        margin-left: 3.5%;
-    }
-    
-    .text_endereco {
-        margin-left: 6%;
-    }
-    .text_info {
-        margin-left: 5%;
+    .next-input-cidade {
+        width: 32%;
     }
 
-    /* inputs */
-
-    .next-input{
-        width: 270px;
-        height: 30px;
+    .next-input-numero {
+        width: 51%;
+        margin-right: -50%;
+        margin-top: 1%;
     }
 
-    .next-input-dd{
-        width: 55px;
-        height: 30px;
+    .next-input-obs {
+        width: 94%;
+        margin-top: 5%;
     }
 
-    .next-input-telefone {
-        width: 200px;
-        height: 30px;
+    .next-input-bairro {
+        width: 60.5%;
     }
 
-
-
-}
-
-
-/* Estilos para desktops extra grandes */
-@media only screen and (min-width: 1200px) {
-    .modal-content {
-        width: 850px;
+    .next-input-apto {
+        width: 94.3%;
+        margin-left: 2%;
     }
 
-    form{
-        width: 40%;
+    .next-input-info {
+        width: 94.5%;
     }
 
-     /* textos */
-
-     .text_nome {
-        margin-left: 3%;
-    }
-    
-    .text_endereco {
-        margin-left: 5%;
-    }
-    .text_info {
-        margin-left: 4%;
-    }
-
-    /* botão de fecha o poup */
-    .close{
-        width: 50px;
-        height: 50px;
-        margin-right: -1%;
-        font-size: 68px;
-        margin-top: -2%;
-    }
-
-    /* inputs */
-
-    .next-input{
-        width: 390px;
-        height: 52px;
-    }
-
-    .next-input-dd{
-        width: 75px;
-        height: 52px;
-    }
-
-    .next-input-telefone {
-        width: 335px;
-        height: 52px;
-    }
-
-    .next-input-cep{
-        max-width: 140px;
-        height: 52px;
-    }
-
-    .next-input-estado{
-        width: 120px;
-        height: 52px;
-    }
-
-    .next-input-cidade{
-        width: 130px;
-        height: 52px;
-    }
-
-    .next-input-prazo{
-        max-width: 77px;
-        height: 52px;
-    }
-
-    .next-input-frete {
-        max-width: 100px;
-        height: 52px;
-    }
-
-    .next-input-numero{
-        width: 233px;
-        height: 52px;
-    }
-
-    .input-checkbox{
-        margin-left: 50%;
+    .input-checkbox {
+        margin-left: 70%;
         margin-top: -35px;
     }
 
-    .next-checkbox-label{
-        margin-left: 5px;
-    }
-
-    .next-input-obs{
-        width: 817px;
-        height: 52px;
-    }
-
-    .next-input-endereco{
-        width: 140px;
-        height: 52px;
-    }
-
-    .next-input-bairro{
-        width: 251px;
-        height: 52px;
-    }
-
-    .next-input-apto{
-        width: 400px;
-        height: 52px;
-    }
-
-    .next-input-info{
-        width: 817px;
-        height: 52px;
-    }
-
-    /* Alertas */
-
-    #warningMessage_nome {
-        margin-left: 2%;
-        margin-top: 10px;
-    }
-    
-    #warningMessage_dd {
-        margin-left: 20%;
-        margin-top: 10px;
-    }
-    
-    #warningMessage_telefone {
-        margin-left: 5%;
-        margin-top: 10px;
-    }
-
-    #cep-error {
-        margin-left: 3%;
-        margin-top: 10px;
-    }
-    
-    #numero-error {
-        margin-left: 34%;
-        margin-top: 10px;
-    }
-
-    #endereco-error {
-        margin-left: 2%;
-        margin-top: 10px;
-    }
-    
-    #bairro-error {
-        margin-left: 4%;
-        margin-top: 10px;
-    }
-
-
-    /* Botões Confirmar e Cancelar */
-
-    .buttons{
-        max-width: 1000px;
-        margin-left: 50%;
-        margin-top: -8%;
-    }
-
-    .button-confirm{
-        width: 180px;
-        height: 54px;
-    }
-
-    .button-cancel{
-        width: 180px;
-        height: 54px;
-    }
-
-    /* Botão de Seleção */
+    /* selecao */
 
     .andes-form-control {
-        margin-top: 10px;
-        margin-left: 10%;
+        margin-left: 14%;
     }
 
+    /* buttons */
+
+    .buttons {
+        margin-top: 0%;
+        margin-left: 6%;
+    }
+
+    /* alertas */
+
+    .alertas_1 {
+        width: 70%;
+        display: grid;
+    }
+
+    #warningMessage_dd {
+        margin-left: 2%;
+    }
+
+    #warningMessage_telefone {
+        margin-left: 2%;
+    }
+
+    .alertas_2 {
+        width: 90%;
+        display: flex;
+    }
+
+    #numero-error {
+        margin-left: 3%;
+    }
+
+    .alertas_3 {
+        width: 90%;
+        display: flex;
+    }
 }
+
+/* CSS para tablets e dispositivos móveis */
+@media screen and (max-width: 768px) {
+    .modal-content {
+        width: 90%; /* faz o modal ocupar 90% da largura da tela */
+        height: auto; /* ajusta a altura automaticamente */
+        padding: 20px;
+    }
+}
+
+/* Estilos para tablets */
+@media (min-width: 601px) and (max-width: 992px) {
+    .modal-content,
+    form,
+    .next-input,
+    .next-input-dd,
+    .next-input-telefone,
+    .next-input-cep,
+    .next-input-estado,
+    .next-input-cidade,
+    .next-input-prazo,
+    .next-input-frete,
+    .next-input-numero,
+    .next-input-obs,
+    .next-input-endereco,
+    .next-input-bairro,
+    .next-input-apto,
+    .next-input-info {
+        width: 80%;
+    }
+    .button-confirm,
+    .button-cancel {
+        width: 45%;
+        height: 3em;
+    }
+}
+
+/* Estilo para telas menores que 800px */
+@media screen and (max-width: 800px) {
+    .modal-content {
+        width: 90%;
+        height: 90%;
+    }
+}
+
+/* Estilos para desktops/laptops pequenos */
+@media (min-width: 993px) and (max-width: 1199px) {
+    .modal-content,
+    form,
+    .next-input,
+    .next-input-dd,
+    .next-input-telefone,
+    .next-input-cep,
+    .next-input-estado,
+    .next-input-cidade,
+    .next-input-prazo,
+    .next-input-frete,
+    .next-input-numero,
+    .next-input-obs,
+    .next-input-endereco,
+    .next-input-bairro,
+    .next-input-apto,
+    .next-input-info {
+        width: 70%;
+    }
+    .button-confirm,
+    .button-cancel {
+        width: 45%;
+        height: 3em;
+    }
+}
+
+/* Estilos para desktops extra grandes */

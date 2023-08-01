@@ -410,9 +410,11 @@ function salvarInformacoes() {
         numero === "" ||
         commercial === "" ||
         residential === ""
-    ) {
-        alert("Por favor, preencha todos os campos obrigatórios.");
-        return; // Impedir o salvamento e fechamento do modal se algum campo estiver vazio
+    ) { 
+        // mensagem de alerta personalizado
+            swal("Por favor, preencha todos os campos obrigatórios.");
+            return; 
+    
     }
 
     // Salvar as informações localmente usando o localStorage

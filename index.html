@@ -32,21 +32,15 @@
                                             <div class="text_nome"> Nome do Contato </div>
                                         </div>
 
-                                        <div class="input-form-1">
-                                            <input class="next-input" id="nome" name="nome"
-                                                placeholder="Nome do Contato*" autocomplete="off" value="" required
-                                                oninput="validarLetras(this)">
+                                        <input class="next-input" id="nome" name="nome" placeholder="Nome do Contato*"
+                                            autocomplete="off" value="" required oninput="validarLetras(this)">
 
-                                            <input class="next-input-dd" id="dd" height="100%" name="dd"
-                                                placeholder="DD*" autocomplete="off" value=""
-                                                oninput="limitarCaracteres(this, 3)">
+                                        <input class="next-input-dd" id="dd" height="100%" name="dd" placeholder="DD*"
+                                            autocomplete="off" value="" oninput="limitarCaracteres(this, 3)">
 
-                                            <input class="next-input-telefone" id="telefone" name="Telefone"
-                                                placeholder="Numero de Celular*" autocomplete="off" value="" required
-                                                oninput="validarTelefone(this)">
-
-
-                                        </div>
+                                        <input class="next-input-telefone" id="telefone" name="Telefone"
+                                            placeholder="Numero de Celular*" autocomplete="off" value="" required
+                                            oninput="validarTelefone(this)">
 
                                         <div class="alertas_1">
                                             <div id="warningMessage_nome" style="color: red;"></div>
@@ -68,69 +62,66 @@
                                 <div class="next-col">
                                     <div class="next-form-item">
                                         <div class="text_linha_2">
-                                            <div class="text_endereco   "> Endereço </div>
+                                            <div class="text_endereco"> Endereço </div>
                                         </div>
 
-                                        <div class="input-form-2">
-                                            <input class="next-input-cep" id="cep" name="cep" placeholder="CEP*"
-                                                autocomplete="off" value="" required
-                                                oninput="validarCEP(this); validarNumeros(this);"
-                                                onchange="formatarCEP(this); buscarFrete(this.value);">
 
-                                            <input class="next-input-estado" id="estado" name="estado"
-                                                placeholder="estado*" autocomplete="do-not-autofill" value="" required
-                                                oninput="validarEstado(this); validarLetras(this);" disabled>
+                                        <input class="next-input-cep" id="cep" name="cep" placeholder="CEP*"
+                                            autocomplete="off" value="" required
+                                            oninput="validarCEP(this); validarNumeros(this);"
+                                            onchange="formatarCEP(this); buscarFrete(this.value);">
 
-                                            <input class="next-input-cidade" id="cidade" name="cidade"
-                                                placeholder="cidade*" autocomplete="do-not-autofill" value="" required
-                                                oninput="validarCidade(this); validarLetras(this);" disabled>
+                                        <input class="next-input-estado" id="estado" name="estado" placeholder="estado*"
+                                            autocomplete="do-not-autofill" value="" required
+                                            oninput="validarEstado(this); validarLetras(this);" disabled>
 
-                                            <input class="next-input-prazo" type="text" id="prazo" name="prazo"
-                                                placeholder="Prazo" disabled readonly>
+                                        <input class="next-input-cidade" id="cidade" name="cidade" placeholder="cidade*"
+                                            autocomplete="do-not-autofill" value="" required
+                                            oninput="validarCidade(this); validarLetras(this);" disabled>
 
-                                            <input class="next-input-frete" type="text" id="frete" name="frete"
-                                                placeholder="Frete" disabled readonly>
+                                        <input class="next-input-prazo" type="text" id="prazo" name="prazo"
+                                            placeholder="Prazo" disabled readonly>
 
-                                            <div class="input-numero">
+                                        <input class="next-input-frete" type="text" id="frete" name="frete"
+                                            placeholder="Frete" disabled readonly>
 
-                                                <input class="next-input-numero" id="numero" name="numero"
-                                                    placeholder="Numero*" autocomplete="off" value="" required
-                                                    oninput="validarNumero(this); validarNumeros(this);">
+                                        <input class="next-input-numero" id="numero" name="numero" placeholder="Numero*"
+                                            autocomplete="off" value="" required
+                                            oninput="validarNumero(this); validarNumeros(this);">
+                                        <div class="next-input-group">
 
-                                                <div class="input-checkbox">
-                                                    <input type="checkbox" id="semNumero" class="checkbox-custom"
-                                                        name="semNumero" onclick="verificarSemNumero()">
-                                                    <label for="semNumero">Sem número</label>
-                                                </div>
+                                            <div class="input-checkbox">
+                                                <input type="checkbox" id="semNumero" class="checkbox-custom"
+                                                    name="semNumero" onclick="verificarSemNumero()">
+                                                <label for="semNumero">Sem número</label>
                                             </div>
                                         </div>
 
+
+
+                                        <input class="next-input-obs" type="text" id="obs" name="obs"
+                                            placeholder="Observação" autocomplete="off" value="" disabled>
 
                                         <div class="alertas_2">
                                             <div id="cep-error" style="color: red; display: none;"></div>
                                             <div id="numero-error" style="color: red; display: none;"></div>
                                         </div>
 
-                                        <input class="next-input-obs" type="text" id="obs" name="obs"
-                                            placeholder="Observação" disabled readonly>
+                                        <input class="next-input-endereco" id="endereco" name="endereço"
+                                            placeholder="Endereco*" autocomplete="off" value="" required
+                                            oninput="validarEndereco(this)" oninput="validarLetras(this)">
+
+                                        <input class="next-input-bairro" id="bairro" name="bairro" placeholder="Bairro*"
+                                            autocomplete="off" value="" required oninput="validarBairro(this)"
+                                            oninput="validarLetras(this)">
 
 
-                                        <div class="input-form-3">
-                                            <input class="next-input-endereco" id="endereco" name="endereço"
-                                                placeholder="Endereco*" autocomplete="off" value="" required
-                                                oninput="validarEndereco(this)" oninput="validarLetras(this)">
-
-                                            <input class="next-input-bairro" id="bairro" name="bairro"
-                                                placeholder="Bairro*" autocomplete="off" value="" required
-                                                oninput="validarBairro(this)" oninput="validarLetras(this)">
+                                        <input class="next-input-apto" id="apto" name="apto"
+                                            placeholder="Apto, conjunto, unidade, etc. (Complemento)"
+                                            autocomplete=" off" value="" oninput="validarApto(this)"
+                                            oninput="validarLetras(this)">
 
 
-                                            <input class="next-input-apto" id="apto" name="apto"
-                                                placeholder="Apto, conjunto, unidade, etc. (Complemento)"
-                                                autocomplete=" off" value="" oninput="validarApto(this)"
-                                                oninput="validarLetras(this)">
-
-                                        </div>
 
                                         <div class="alertas_3">
                                             <div id="endereco-error" style="color: red; display: none;"></div>
@@ -146,8 +137,6 @@
                                         <input class="next-input-info" id="info" name="info"
                                             placeholder="Descrição da fachada, pontos de referência, informações de segurança etc."
                                             autocomplete="off" value="">
-
-
 
 
                                         <div
@@ -195,7 +184,6 @@
                                                 </div>
                                             </div>
                                         </div>
-
                                     </div>
                                 </div>
                             </div>
@@ -215,10 +203,11 @@
                     </button>
                 </div>
             </div>
-            
+
         </div>
     </div>
 
+    <script src="https://unpkg.com/sweetalert@2/dist/sweetalert.min.js"></script>
     <script src="javascript.js"></script>
 </body>
 
