@@ -232,8 +232,8 @@
 .input-checkbox {
     position: relative;
     display: flex;
-    margin-left: 87%;
-    margin-top: -50px;
+    margin-left: 94%;
+    margin-top: -35px;
     color: #007bff;
 }
 
@@ -282,7 +282,7 @@
     border: 1px solid #ccc;
     border-radius: 4px;
     box-sizing: border-box;
-    margin-top: 5px;
+    margin-top: 20px;
     cursor: not-allowed;
 }
 
