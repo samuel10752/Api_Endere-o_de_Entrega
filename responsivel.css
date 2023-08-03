@@ -6,7 +6,6 @@
         width: 155% !important;
     }
 
-
     /* input */
 
     .next-input {
@@ -54,17 +53,17 @@
         margin-left: 250%;
     }
 
-    .andes-form-control{
+    .andes-form-control {
         margin-left: -10% !important;
     }
 
-    .button-confirm{
+    .button-confirm {
         width: 250% !important;
         top: 30%;
         left: -15%;
     }
 
-    .button-cancel{
+    .button-cancel {
         width: 250% !important;
         top: 30%;
         left: -15%;
@@ -326,7 +325,7 @@
     }
 
     .next-input-apto {
-        max-width: 39.7%;
+        max-width: 35%;
         margin-left: 0%;
         height: 20%;
     }
