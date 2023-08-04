@@ -764,7 +764,7 @@
 
 }
 
-@media screen and (min-width: 1600px) {
+@media screen and (min-width: 1700px) {
     .modal-content {
         width: 57%; /* faz o modal ocupar a totalidade da largura da tela */
         padding: 10px;

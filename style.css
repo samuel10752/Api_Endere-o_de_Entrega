@@ -9,6 +9,26 @@
     height: 100%;
     overflow: auto;
     background-color: rgba(0, 0, 0, 0.4);
+
+        /* Animação */
+        animation-name: fadeIn;
+        animation-duration: 1s;
+}
+
+@keyframes fadeIn {
+    from {opacity: 0;}
+    to {opacity: 1;}
+}
+
+.modal.fadeOut {
+    animation-name: fadeOut;
+    animation-duration: 1s;
+    animation-fill-mode: forwards; /* Isso mantém a última chave da animação */
+}
+
+@keyframes fadeOut {
+    from {opacity: 1;}
+    to {opacity: 0;}
 }
 
 .modal-content {
@@ -36,6 +56,35 @@
 
 .modal-content::-webkit-scrollbar-track {
     background-color: rgba(0, 0, 0, 0); /* Define uma cor transparente para a pista da barra de rolagem */
+}
+
+button#enderecoPopup {
+    /* Cores */
+    background-color: #3498db;
+    color: #fff;
+
+    /* Tamanho e espaço */
+    padding: 10px 20px;
+
+    /* Arredondar as bordas */
+    border-radius: 5px;
+    border: none;
+
+    /* Adicionar sombras */
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+
+    /* Tipografia */
+    font-size: 1.1em;
+    font-weight: bold;
+
+    /* Transições */
+    transition: background-color 0.3s ease;
+}
+
+/* Efeito hover */
+button#enderecoPopup:hover {
+    background-color: #2980b9;
+    cursor: pointer;
 }
 
 /* Estilo que botão de fecha o poup */

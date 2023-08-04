@@ -362,6 +362,7 @@ function exibirEndereco() {
 
 // Função para fechar o modal e limpar os inputs
 function fecharPopup() {
+
     var modals = document.getElementsByClassName("modal");
     for (var i = 0; i < modals.length; i++) {
         modals[i].style.display = "none";
@@ -455,15 +456,24 @@ function salvarInformacoes() {
     fecharPopup();
 }
 
+document.getElementById("enderecoPopup").onclick = function () {
+    var modal = document.getElementById("myModal");
+    modal.style.display = "block";
+};
 
-// Evento de clique no botão "Confirmar"
-document.getElementById("enderecoPopup").onclick = exibirEndereco;
-
-// Evento de clique fora do modal para fechá-lo
 window.onclick = function (event) {
     var modal = document.getElementById("myModal");
     if (event.target == modal) {
         fecharPopup();
     }
+}
 
+function fecharPopup() {
+    var modal = document.getElementById("myModal");
+    modal.classList.add("fadeOut");
+
+    setTimeout(function () {
+        modal.style.display = "none";
+        modal.classList.remove("fadeOut");
+    }, 100); // Esperar 1 segundo (o mesmo tempo que a animação de desvanecimento)
 }
