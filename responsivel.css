@@ -93,7 +93,7 @@
     /* selecao */
 
     .andes-form-control {
-        left: 12%;
+        margin-left: 1% !important;
     }
 
     .semnumero {
@@ -127,6 +127,10 @@
         max-width: 27%;
     }
     /* alertas */
+
+    .andes-form-control {
+        left: 10%;
+    }
 
     .alertas_1 {
         display: grid;
@@ -203,7 +207,7 @@
     /* selecao */
 
     .andes-form-control {
-        right: -22%;
+        right: -18%;
     }
 
     /* buttons */
@@ -344,14 +348,14 @@
     /* selecao */
 
     .andes-form-control {
-        margin-left: 0%;
+        margin-left: 5%;
     }
 
     /* buttons */
 
     .buttons {
         width: 40%;
-        margin-top: -10%;
+        margin-top: -12%;
         margin-left: 57%;
     }
 
@@ -387,7 +391,7 @@
 /* Estilos para desktops/laptops pequenos */
 @media (min-width: 993px) and (max-width: 1199px) {
     .modal-content {
-        width: 60%; /* faz o modal ocupar a totalidade da largura da tela */
+        width: 50%; /* faz o modal ocupar a totalidade da largura da tela */
         padding: 10px;
     }
     /* texto */
@@ -438,16 +442,19 @@
     }
 
     .next-input-obs {
-        width: 92.5%;
-        margin-top: 3%;
+        width: 95.5%;
+        margin-top: 4% !important;
     }
 
     .next-input-bairro {
-        max-width: 24%;
+        max-width: 22%;
     }
 
+    .next-input-endereco{
+        width: 23%;
+    }
     .next-input-apto {
-        width: 45.8%;
+        width: 47%;
         margin-left: 2%;
     }
 
@@ -464,16 +471,142 @@
     /* selecao */
 
     .andes-form-control {
-        margin-left: 5%;
+        margin-left: 25%;
+        margin-top: -3%;
+    }
+
+    /* buttons */
+
+    .buttons {
+        width: 87%;
+        margin-top: 0%;
+        margin-left: 15%;
+    }
+
+    /* alertas */
+
+    .alertas_1 {
+        width: 100%;
+        display: grid;
+    }
+
+    #warningMessage_dd {
+        margin-left: 2%;
+    }
+
+    #warningMessage_telefone {
+        margin-left: 2%;
+    }
+
+    .alertas_2 {
+        width: 90%;
+        display: flex;
+    }
+
+    #numero-error {
+        margin-left: 3%;
+    }
+
+    .alertas_3 {
+        width: 90%;
+        display: flex;
+    }
+}
+
+/* Estilos para desktops/laptops pequenos */
+@media screen and (min-width: 1200px) {
+    .modal-content {
+        width: 55%; /* faz o modal ocupar a totalidade da largura da tela */
+        padding: 10px;
+    }
+    /* texto */
+    .text_linha_1 {
+        margin-left: 2%;
+        width: 35%;
+    }
+
+    .text_linha_2 {
+        margin-left: 1%;
+        width: 40%;
+    }
+
+    .text_linha_5 {
+        margin-left: 0%;
+        width: 93%;
+    }
+    /* inputs */
+    .next-input {
+        width: 45%;
+    }
+
+    .next-input-telefone {
+        width: 38%;
+        margin-left: -1%;
+    }
+
+    .next-input-cep {
+        width: 15%;
+    }
+
+    .next-input-estado {
+        width: 10%;
+    }
+
+    .next-input-frete {
+        width: 11%;
+    }
+
+    .next-input-cidade {
+        width: 18.7%;
+    }
+
+    .next-input-numero {
+        width: 25%;
+
+    }
+
+    .next-input-obs {
+        width: 95%;
+        margin-top: 2.5%;
+    }
+
+    .next-input-bairro {
+        width: 31%;
+    }
+
+    .next-input-apto {
+        width: 47.4%;
+        margin-left: 2%;
+    }
+
+    .next-input-info {
+        width: 94.5%;
+    }
+
+    .next-input-endereco{
+        width: 13.5%;
+    }
+
+    .input-checkbox {
+        width: 1%;
+        right: 6%;
+        margin-top: -35px;
+    }
+
+    /* selecao */
+
+    .andes-form-control {
+        margin-left: 10%;
     }
 
     /* buttons */
 
     .buttons {
         width: 40%;
-        margin-top: -10%;
-        margin-left: 52%;
+        margin-top: -9%;
+        margin-left:55%;
     }
+
 
     /* alertas */
 
@@ -502,4 +635,258 @@
         width: 90%;
         display: flex;
     }
+}
+
+@media screen and (min-width: 1500px) {
+    .modal-content {
+        width: 57%; /* faz o modal ocupar a totalidade da largura da tela */
+        padding: 10px;
+    }
+    /* texto */
+    .text_linha_1 {
+        margin-left: 2%;
+        width: 35%;
+    }
+
+    .text_linha_2 {
+        margin-left: 1%;
+        width: 40%;
+    }
+
+    .text_linha_5 {
+        margin-left: 0%;
+        width: 93%;
+    }
+    /* inputs */
+    .next-input {
+        width: 44%;
+    }
+
+    .next-input-telefone {
+        width: 40.5%;
+        margin-left: -1%;
+    }
+
+    .next-input-cep {
+        width: 15%;
+    }
+
+    .next-input-estado {
+        width: 10%;
+    }
+
+    .next-input-frete {
+        width: 11%;
+    }
+
+    .next-input-cidade {
+        width: 18.3%;
+    }
+
+    .next-input-prazo{
+        margin-left: 2.2%;
+    }
+    .next-input-numero {
+        width: 27%;
+
+    }
+
+    .next-input-obs {
+        width: 94.4%;
+        margin-top: 2.5%;
+    }
+
+    .next-input-bairro {
+        width: 31%;
+    }
+
+    .next-input-apto {
+        width: 47.1%;
+        margin-left: 2%;
+    }
+
+    .next-input-info {
+        width: 94.4%;
+    }
+
+    .next-input-endereco{
+        width: 13.5%;
+    }
+
+    .input-checkbox {
+        width: 1%;
+        right: 5%;
+        margin-top: -35px;
+    }
+
+    /* selecao */
+
+    .andes-form-control {
+        margin-left: 10%;
+    }
+
+    /* buttons */
+
+    .buttons {
+        width: 40%;
+        margin-top: -7%;
+        margin-left:55%;
+    }
+
+
+    /* alertas */
+
+    .alertas_1 {
+        width: 100%;
+    }
+
+    #warningMessage_dd {
+        margin-left: 2%;
+    }
+
+    #warningMessage_telefone {
+        margin-left: 2%;
+    }
+
+    .alertas_2 {
+        width: 90%;
+        display: flex;
+    }
+
+    #numero-error {
+        margin-left: 3%;
+    }
+
+    .alertas_3 {
+        width: 90%;
+        display: flex;
+    }
+
+}
+
+@media screen and (min-width: 1600px) {
+    .modal-content {
+        width: 57%; /* faz o modal ocupar a totalidade da largura da tela */
+        padding: 10px;
+    }
+    /* texto */
+    .text_linha_1 {
+        margin-left: 2%;
+        width: 35%;
+    }
+
+    .text_linha_2 {
+        margin-left: 1%;
+        width: 40%;
+    }
+
+    .text_linha_5 {
+        margin-left: 0%;
+        width: 93%;
+    }
+    /* inputs */
+    .next-input {
+        width: 46%;
+    }
+
+    .next-input-telefone {
+        width: 40.5%;
+        margin-left: -1%;
+    }
+
+    .next-input-cep {
+        width: 28%;
+    }
+
+    .next-input-estado {
+        width: 10%;
+    }
+
+    .next-input-frete {
+        width: 11%;
+    }
+
+    .next-input-cidade {
+        width: 22%;
+    }
+
+    .next-input-prazo{
+        margin-left: 2.2%;
+    }
+    .next-input-numero {
+        width: 29.5%;
+
+    }
+
+    .next-input-obs {
+        width: 95.2%;
+        margin-top: 2.5%;
+    }
+
+    .next-input-bairro {
+        width: 31%;
+    }
+
+    .next-input-apto {
+        width: 48%;
+        margin-left: 2%;
+    }
+
+    .next-input-info {
+        width: 95%;
+    }
+
+    .next-input-endereco{
+        width: 13.5%;
+    }
+
+    .input-checkbox {
+        width: 1%;
+        right:3%;
+        margin-top: -35px;
+    }
+
+    /* selecao */
+
+    .andes-form-control {
+        margin-left: 10%;
+    }
+
+    /* buttons */
+
+    .buttons {
+        width: 40%;
+        margin-top: -6%;
+        margin-left:55%;
+    }
+
+
+    /* alertas */
+
+    .alertas_1 {
+        width: 100%;
+    }
+
+    #warningMessage_dd {
+        margin-left: 2%;
+    }
+
+    #warningMessage_telefone {
+        margin-left: 2%;
+    }
+
+    .alertas_2 {
+        width: 90%;
+        display: flex;
+    }
+
+    #numero-error {
+        margin-left: 3%;
+    }
+
+    .alertas_3 {
+        width: 90%;
+        display: flex;
+    }
+
 }

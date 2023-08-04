@@ -309,33 +309,33 @@ function validarApto(input) {
 // Função que ele valida o Numero da Casa inserido e que também so pode entrar numeros no input
 function validarNumero(input) {
     var checkbox = document.getElementById('semNumero');
-    var num = input.value.replace(/[^0-9]/g, ''); // Remove todos os caracteres não numéricos
-    input.value = num;
     const errorDiv = document.getElementById('numero-error');
 
     // Verifica se o campo de número está desabilitado
     if (input.disabled) {
         errorDiv.style.display = 'none';
         input.style.border = '';  // remove a borda vermelha
-    } else if (input.value === '') {
-        // Exibe a mensagem de erro se o campo de número estiver vazio e o checkbox não estiver marcado
-        if (!checkbox.checked) {
-            errorDiv.style.display = 'block';
-            errorDiv.innerText = 'Por favor, insira o número.';
-            input.style.border = '1px solid red';  // faz a borda ficar vermelha
+    } else {
+        var num = input.value.replace(/[^0-9]/g, ''); // Remove todos os caracteres não numéricos
+        input.value = num;
+        if (input.value === '') {
+            // Exibe a mensagem de erro se o campo de número estiver vazio e o checkbox não estiver marcado
+            if (!checkbox.checked) {
+                errorDiv.style.display = 'block';
+                errorDiv.innerText = 'Por favor, insira o número.';
+                input.style.border = '1px solid red';  // faz a borda ficar vermelha
+            } else {
+                errorDiv.style.display = 'none';
+                input.style.border = '';  // remove a borda vermelha
+            }
         } else {
             errorDiv.style.display = 'none';
             input.style.border = '';  // remove a borda vermelha
         }
-    } else {
-        errorDiv.style.display = 'none';
-        input.style.border = '';  // remove a borda vermelha
     }
 }
 
-
-
-// Função que ele desabilita o input para inserir numero da casa e que ele coloca como não tem numero S/N
+// Função que desabilita o input para inserir número da casa e coloca como não tem número S/N
 function verificarSemNumero() {
     var checkbox = document.getElementById('semNumero');
     var numeroInput = document.getElementById('numero');
@@ -352,7 +352,6 @@ function verificarSemNumero() {
     // Chamada para validarNumero para atualizar a borda e o texto de erro
     validarNumero(numeroInput);
 }
-
 
 
 // Função para abrir o modal
