@@ -30,7 +30,6 @@
     <pre>pm2 startup</pre>
     <li>Salve a configuração atual do pm2 com o comando:</li>
     <pre>pm2 save</pre>
-    <img>https://carbon.now.sh/7da1a283-68ce-4479-b83b-44361c8a6ecf</img>
 </ol>
 <p>O servidor estará ouvindo na porta 3000 para a primeira aplicação e na porta 4000 para a segunda aplicação.</p>
 <p>Existem duas rotas disponíveis:</p>
@@ -56,6 +55,7 @@
 <p>Contribuições são sempre bem-vindas. Sinta-se à vontade para abrir uma issue ou um pull request.</p>
 
 <h2>Licença</h2>
-<p>MIT</p>
 
-<p>Substitua &lt;url-do-seu-repositorio&gt; pelo URL real do seu repositório. Este exemplo de README é bem básico. Você pode adicionar mais seções como 'Testes', 'Deployment', etc., de acordo com as necessidades do seu projeto.</p>
+[MIT](https://github.com/samuel10752/Api_Endere-o_de_Entrega) 
+
+
