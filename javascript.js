@@ -19,7 +19,7 @@ async function buscarEndereco(cep) {
 
 // função que calcula o frete depois que buscado o cep
 async function buscarFrete(cep) {
-    const url = `http://localhost:3000/frete/${cep}`;
+    const url = `http://localhost:3001/frete/${cep}`;
 
     try {
         const response = await fetch(url);

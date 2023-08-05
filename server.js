@@ -30,6 +30,13 @@ app.get('/endereco/:cep', async (req, res) => {
   }
 });
 
+
+// Ouvir na porta 3000
+app.listen(3000, () => {
+  console.log('API iniciada na porta 3000');
+});
+
+
 // Rota para calcular o frete com base no CEP
 app.get('/frete/:cep', async (req, res) => {
   try {
@@ -65,50 +72,8 @@ app.get('/frete/:cep', async (req, res) => {
   }
 });
 
-// Ouvir na porta 3000
-app.listen(3000, () => {
-  console.log('API iniciada na porta 3000');
+// Ouvir na porta 3001
+app.listen(3001, () => {
+  console.log('API iniciada na porta 3001');
 });
-
-
-// Definir um valor fixo para o frete de envio de carta
-// const freteFixo = 9.05; // Exemplo de valor fixo
-
-// app.get('/frete/:cep', async (req, res) => {
-//   try {
-//     const cep = req.params.cep;
-//     const url = 'http://ws.correios.com.br/calculador/CalcPrecoPrazo.asmx?wsdl';
-
-//     const args = {
-//       nCdEmpresa: '', // Seu código de empresa nos Correios, se houver
-//       sDsSenha: '', // Sua senha nos Correios, se houver
-//       nCdServico: '10065', // Código do serviço - 10065 é o código para Carta Comercial à Vista
-//       sCepOrigem: '37524-000', // CEP de origem
-//       sCepDestino: cep, // CEP de destino
-//       nVlPeso: '1', // Peso da encomenda, em quilogramas
-//       nCdFormato: '1', // Formato da encomenda (1 - Formato caixa/pacote, 2 - Formato rolo/prisma, 3 - Envelope)
-//       nVlComprimento: '20', // Comprimento da encomenda, em centímetros
-//       nVlAltura: '5', // Altura da encomenda, em centímetros
-//       nVlLargura: '15', // Largura da encomenda, em centímetros
-//       nVlDiametro: '0' // Diâmetro da encomenda, em centímetros (se aplicável)
-//     };
-
-//     soap.createClientAsync(url).then((client) => {
-//       return client.CalcPrazoAsync(args);
-//     }).then((result) => {
-//       // Alterar aqui para retornar o valor fixo
-//       const fixedResult = { ...result[0].CalcPrazoResult.Servicos.cServico, Valor: freteFixo.toString() };
-//       res.json(fixedResult);
-//     }).catch((err) => {
-//       res.status(500).json({ message: 'Erro ao calcular o frete', error: err });
-//     });
-//   } catch (error) {
-//     res.status(500).json({ message: 'Erro ao calcular o frete', error: error });
-//   }
-// });
-
-// // Ouvir na porta 3000
-// app.listen(3000, () => {
-//   console.log('API iniciada na porta 3000');
-// });
 

@@ -1,4 +1,9 @@
 /* Estilo do modal */
+body {
+    font-family: Arial, Helvetica, sans-serif; /* Usa a fonte Roboto */
+    background-color: #636363; /* Altere essa cor conforme sua necessidade */
+}
+
 .modal {
     display: none;
     position: fixed;
@@ -10,14 +15,18 @@
     overflow: auto;
     background-color: rgba(0, 0, 0, 0.4);
 
-        /* Animação */
-        animation-name: fadeIn;
-        animation-duration: 1s;
+    /* Animação */
+    animation-name: fadeIn;
+    animation-duration: 1s;
 }
 
 @keyframes fadeIn {
-    from {opacity: 0;}
-    to {opacity: 1;}
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
 }
 
 .modal.fadeOut {
@@ -27,13 +36,22 @@
 }
 
 @keyframes fadeOut {
-    from {opacity: 1;}
-    to {opacity: 0;}
+    from {
+        opacity: 1;
+    }
+    to {
+        opacity: 0;
+    }
+}
+
+h1 {
+    color: #ffffff;
+    text-align: center;
 }
 
 .modal-content {
     border-radius: 3%;
-    background-color: #fefefe;
+    background-color: #f7f7f7;
     margin: 4% auto;
     padding: 10px;
     border: 1px solid #888;
@@ -79,6 +97,11 @@ button#enderecoPopup {
 
     /* Transições */
     transition: background-color 0.3s ease;
+
+    /* movimentacao */
+
+    margin-left: 45%;
+    margin-top: 20%;
 }
 
 /* Efeito hover */
