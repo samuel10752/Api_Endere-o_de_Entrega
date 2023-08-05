@@ -10,7 +10,7 @@
 <h2>Instalação</h2>
 <ol>
     <li>Clone o repositório para o seu computador.</li>
-    <pre>git clone &lt;url-do-seu-repositorio&gt;</pre>
+    <pre>git clone https://github.com/samuel10752/Api_Endere-o_de_Entrega</pre>
     <li>Navegue até a pasta do projeto.</li>
     <pre>cd Api_Endereco_de_Entrega</pre>
     <li>Instale as dependências.</li>
