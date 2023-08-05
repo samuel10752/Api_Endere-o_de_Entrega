@@ -1,0 +1,34 @@
+Iniciar a instalacao dos modulos do node para o server.js funcionar:
+npm install express
+npm install soap
+npm install cors
+
+Para iniciar ele manualmente e so digitar esse codigo no terminal:
+node server.js
+
+Fazer que ele roda o server.js iniciar seu servidor automaticamente em qualquer sistema operacional e também mantê-lo em execução caso ele falhe:
+
+Instale o pm2 globalmente usando o npm com o comando:
+npm install pm2 -g
+
+Inicie seu servidor com pm2 usando o comando:
+pm2 start server.js
+
+Configure o pm2 para iniciar automaticamente na inicialização com o comando:
+pm2 startup
+
+Salve a configuração atual do pm2 com o comando:
+pm2 save
+
+
+Lista de Codigos dos Servicos dos Correios ( Alguns desses codigos podem ser ter descontinuados ficarem atentos caso atualizar pelo site do correio).:
+// SEDEX à vista: 04014
+// SEDEX 10: 40215
+// SEDEX Hoje: 40290
+// SEDEX a Cobrar: 40126
+// PAC à vista: 04510
+// PAC a Cobrar: 04707
+// Carta Comercial: 10065
+// Carta Não Comercial: 10138
+// Carta Registrada: 10014
+// Aerograma Nacional: 10689
